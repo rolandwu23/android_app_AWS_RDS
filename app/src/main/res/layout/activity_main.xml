@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="News title"
+    android:id="@+id/edTitle"
+    />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="News"
+        android:id="@+id/edNews"
+        android:layout_below="@+id/edTitle"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="News Time"
+        android:id="@+id/edTime"
+        android:layout_below="@+id/edNews"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Put me"
+        android:id="@+id/btnPut"
+        android:layout_below="@+id/edTime"
+        />
+
+    <Button
+    android:layout_below="@+id/btnPut"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Show me"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/button"
+    />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/button"
+    >
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hint="Text Here"
+    android:id="@+id/text"
+    />
+</ScrollView>
+</RelativeLayout>
